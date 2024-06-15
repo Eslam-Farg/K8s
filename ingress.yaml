@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: nginx-service
+            name: mongo-express
             port:
               number: 80
