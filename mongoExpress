@@ -26,6 +26,11 @@ spec:
           value: "password"
         - name: ME_CONFIG_MONGODB_SERVER
           value: "mongodb-service"
+      - name: mongodb-client
+         image: mongo:latest
+         command: ["bash", "-c", "sleep infinity"]
+         stdin: true
+         tty: true
 ---
 apiVersion: v1
 kind: Service
